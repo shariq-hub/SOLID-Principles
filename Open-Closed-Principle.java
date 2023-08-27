@@ -6,17 +6,23 @@ class AnimalFeeder {
     public void feedBird() {}
     // ...
 }
+
+
+
 //This one is a Good one
 
 interface Animal {
     void feed();
 }
 
+
 class AnimalFeeder {
     public void feed(Animal a) {
         a.feed();
     }
 }
+
+// now whatever object we want we can simply pass in AnimalFeeder method and we don't need to modify AnimalFeeder class if we want to extend the functionality of Animal
 
 class Dog implements Animal {
     public void feed() {}
